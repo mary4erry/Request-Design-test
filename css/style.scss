@@ -1,0 +1,183 @@
+@font-face {
+   font-family: 'Myriad'; 
+   src: url(../fonts/MyriadPro.ttf);
+  }
+  @font-face {
+   font-family: 'Myriad Light'; 
+   src: url(../fonts/MyriadProLight.otf);
+  }
+  *{
+   padding: 0px;
+   margin: 0px;
+  }
+html,
+body {
+
+   height: 100%;
+   width: 100%;
+   background-color: #f1f1f1;
+}
+.page{
+      height: 100vh;
+      // display: flex;
+      // justify-content: space-between;
+      max-width: 767px;
+      margin: 0 auto;
+}
+@media (min-width: 767px) {
+   .page{
+      width: 1920px;
+   }
+}
+.container{
+   margin-left: 29px;
+   margin-right: 46px;
+}
+.menu{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 97px;
+      &__navigation-logo{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         & img{
+            margin-right: 31px;
+         }
+         &__logo{
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            & img{
+               margin-right: 10px;
+            }
+            & p{
+               margin: 0;
+               // font-family: 'Myriad'; 
+
+            }
+            & span {
+               // font-family: 'Myriad'; 
+            }
+            & p:first-child {
+               font-family: 'Myriad'; 
+               color: #353535;
+               font-size: 30px;
+               font-weight: 400;
+               line-height: 44px;
+            }
+            & p:last-child {
+               font-family: 'Myriad Light'; 
+               font-weight: 100;
+               font-size: 18px;
+               color: #777777;
+               line-height: 6px;
+            }
+         }
+         &__nav{
+            height: 73px;
+         }
+      }
+      &__facilities{
+         display: flex;
+         flex-direction: row;
+         height: 57px;
+         & img {
+            height: 57px;
+            &:nth-child(2){
+               margin-right: 34px;
+               margin-left: 40px;
+            }
+            &:last-child{
+               width: 56px;
+               height: 50px;
+               margin-top: 8px;
+            }
+         }
+      }
+}
+.equipment{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   // height: 92px;
+   height: 85px;
+
+   & span{
+      color: #000000;
+      font-family: "Myriad Light";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 16px;
+   }
+
+   & button{
+      font-family: "Myriad Light";
+      border: none;
+      font-size: 35px;
+      font-weight: 100;
+      color: #777777;
+      padding: 0;;
+   }
+}
+.arrow-btn{
+
+}
+.sale{
+   background-color: #fff;
+   height: 476px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   &-wrapper{
+      padding: 83px 61px;
+
+      & img{
+         width: 118px;
+         height: 146px;
+         margin-bottom: 26px;
+      }
+      & span{
+         
+         & :first-child{
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 16px;
+            color: #191919;
+            font-family: "Myriad Light";
+         }
+         & :nth-child(2){
+            color: #000;
+            font-family: "Myriad";
+            font-size: 50px;
+            font-weight: 300;
+            line-height: 81px;
+         }
+         & :nth-child(3){
+            color: #faad3d;
+            font-family: "Myriad Light";
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 80px;
+
+         }
+         
+      }
+   }    
+}
+.brands{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   background-color: #ffffff;
+
+   & div{
+      width: 344px;
+      height: 169px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
