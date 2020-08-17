@@ -1,161 +1,182 @@
 @font-face {
-   font-family: 'Myriad'; 
+   font-family: 'Myriad';
    src: url(../fonts/MyriadPro.ttf);
-  }
-  @font-face {
-   font-family: 'Myriad Light'; 
+}
+
+@font-face {
+   font-family: 'Myriad Light';
    src: url(../fonts/MyriadProLight.otf);
-  }
-  *{
+}
+
+* {
    padding: 0px;
    margin: 0px;
-  }
+   text-decoration: none;
+}
+
 html,
 body {
-
    height: 100%;
    width: 100%;
    background-color: #f1f1f1;
 }
-.page{
-      height: 100vh;
-      // display: flex;
-      // justify-content: space-between;
-      max-width: 767px;
-      margin: 0 auto;
+
+.page {
+   height: 100vh;
+   max-width: 767px;
+   margin: 0 auto;
 }
+
 @media (min-width: 767px) {
-   .page{
+   .page {
       width: 1920px;
    }
 }
-.container{
+
+.container {
    margin-left: 29px;
    margin-right: 46px;
 }
-.menu{
+
+.menu {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   height: 97px;
-      &__navigation-logo{
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         & img{
-            margin-right: 31px;
-         }
-         &__logo{
-            height: 55px;
-            display: flex;
-            flex-direction: row;
-            & img{
-               margin-right: 10px;
-            }
-            & p{
-               margin: 0;
-               // font-family: 'Myriad'; 
+   height: 99px;
 
-            }
-            & span {
-               // font-family: 'Myriad'; 
-            }
-            & p:first-child {
-               font-family: 'Myriad'; 
-               color: #353535;
-               font-size: 30px;
-               font-weight: 400;
-               line-height: 44px;
-            }
-            & p:last-child {
-               font-family: 'Myriad Light'; 
-               font-weight: 100;
-               font-size: 18px;
-               color: #777777;
-               line-height: 6px;
-            }
-         }
-         &__nav{
-            height: 73px;
-         }
+   &__navigation-logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      & img {
+         margin-right: 31px;
       }
-      &__facilities{
+
+      &__logo {
+         height: 55px;
          display: flex;
          flex-direction: row;
-         height: 57px;
+
          & img {
-            height: 57px;
-            &:nth-child(2){
-               margin-right: 34px;
-               margin-left: 40px;
-            }
-            &:last-child{
-               width: 56px;
-               height: 50px;
-               margin-top: 8px;
-            }
+            margin-right: 10px;
+         }
+
+         & p {
+            margin: 0;
+         }
+
+         & p:first-child {
+            font-family: 'Myriad';
+            color: #353535;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 42px;
+         }
+
+         & p:last-child {
+            font-family: 'Myriad Light';
+            font-weight: 100;
+            font-size: 18px;
+            color: #777777;
+            line-height: 7px;
+            letter-spacing: 0.25px;
          }
       }
+
+      &__nav {
+         height: 73px;
+      }
+   }
+
+   &__facilities {
+      display: flex;
+      flex-direction: row;
+      height: 57px;
+
+      & img {
+         height: 57px;
+
+         &:nth-child(2) {
+            margin-right: 34px;
+            margin-left: 40px;
+         }
+
+         &:last-child {
+            width: 56px;
+            height: 50px;
+            margin-top: 6px;
+         }
+      }
+   }
 }
-.equipment{
+
+.equipment {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   // height: 92px;
-   height: 85px;
+   height: 82px;
+   border-top: 1px solid #e2e2e2;
+   background-color: #f1f1f1;
 
-   & span{
+   & span {
       color: #000000;
       font-family: "Myriad Light";
       font-size: 30px;
       font-weight: 400;
-      line-height: 16px;
    }
 
-   & button{
+   & button {
       font-family: "Myriad Light";
       border: none;
       font-size: 35px;
       font-weight: 100;
       color: #777777;
-      padding: 0;;
+      padding: 0;
+      letter-spacing: -2px;
    }
 }
-.arrow-btn{
 
-}
-.sale{
+.arrow-btn {}
+
+.sale {
    background-color: #fff;
-   height: 476px;
+   height: 472px;
    margin-top: 30px;
    margin-bottom: 30px;
-   &-wrapper{
-      padding: 83px 61px;
+   border-radius: 2px;
+   border: 2px solid #faad3d;
 
-      & img{
+   &-wrapper {
+      padding: 81px 59px;
+
+      & img {
          width: 118px;
          height: 146px;
          margin-bottom: 26px;
       }
-      & span{
-         
-         & :first-child{
+
+      & span {
+
+         & :first-child {
             font-size: 25px;
             font-weight: 300;
             line-height: 16px;
             color: #191919;
             font-family: "Myriad Light";
          }
-         & :nth-child(2){
+
+         & :nth-child(2) {
             color: #000;
             font-family: "Myriad";
             font-size: 50px;
             font-weight: 300;
             line-height: 81px;
          }
-         & :nth-child(3){
+
+         & :nth-child(3) {
             color: #faad3d;
             font-family: "Myriad Light";
             font-weight: 300;
@@ -163,21 +184,105 @@ body {
             line-height: 80px;
 
          }
-         
       }
-   }    
+   }
 }
-.brands{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr;
-   background-color: #ffffff;
 
-   & div{
-      width: 344px;
+.brands {
+   display: grid;
+   grid-row-gap: 0.2px;
+   grid-template-columns: 1fr 1fr;
+   position: relative;
+
+   & :nth-child(odd) {
+      & :after {
+         content: '';
+         background-image: url('../img/divider.png');
+         width: 2px;
+         height: 87px;
+         position: absolute;
+         left: 50%;
+      }
+   }
+
+   & :nth-child(1) a img {
+      width: 242px;
+      height: 50px;
+   }
+
+   & :nth-child(2) a img {
+      width: 225px;
+      height: 58px;
+   }
+
+   & :nth-child(3) {
+      margin-top: 3px;
+      margin-bottom: 3px;
+
+      & a img {
+         width: 218px;
+         height: 55px;
+      }
+   }
+
+   & :nth-child(4) {
+      margin-top: 3px;
+      margin-bottom: 3px;
+
+      & a img {
+         width: 224px;
+         height: 55px;
+      }
+   }
+
+   & :nth-child(5) a img {
+      width: 243px;
+      height: 62px;
+   }
+
+   & :last-child a p {
+      color: #282828;
+      font-family: "Myriad";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 66.93px;
+   }
+
+   & div {
+      width: 345.5px;
       height: 169px;
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: #ffffff;
+   }
+}
+
+.recomend {
+   height: 431px;
+   padding-top: 141px;
+
+   .recomend-content {
+      text-align: center;
+      padding-left: 16px;
+      padding-right: 18px;
+
+      & p {
+         color: #000000;
+         font-family: "Myriad Pro";
+         font-size: 50px;
+         font-weight: 400;
+      }
+
+      &__description {
+         margin-top: 10px;
+
+         & p {
+            color: #777777;
+            font-family: "Myriad Light";
+            font-size: 30px;
+            font-weight: 400;
+         }
+      }
    }
 }
