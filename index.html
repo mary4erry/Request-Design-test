@@ -5,58 +5,65 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
-   <link rel="stylesheet" href="./css/swiper.css">
-   <link rel="stylesheet" href="../package/swiper-bundle.min.css">
-   <script src="../package/swiper.js"></script>
    <title>Document</title>
 </head>
 
 <body>
    <div class="page">
       <div class="menu container">
-         <div class="menu__navigation-logo">
-            <div class="menu__navigation-logo__nav">
-               <img src="./img/ellips_1.png" alt="ellips_1">
+         <div class="navigation-logo">
+            <div class="navigation-logo__nav">
+               <img class="nav-circle" src="./img/ellips_1.png" alt="ellips_1">
             </div>
-            <div class="menu__navigation-logo__logo">
-               <img src="./img/fork-and-knife.png" alt="fork-and-knife">
+            <div class="navigation-logo__logo">
+               <img class="logo-min" src="./img/fork-and-knife.png" alt="fork-and-knife">
                <span>
-                  <p>Столовая.РУ</p>
-                  <p>Создание пищеблоков</p>
+                  <p class="subtitle logo-subtitle">Столовая.РУ</p>
+                  <p class="slogan logo-slogan">Создание пищеблоков</p>
                </span>
             </div>
          </div>
          <div class="menu__facilities">
-            <img src="./img/search.png" alt="search">
-            <img src="./img/phone.png" alt="phone">
-            <img src="./img/cart.png" alt="cart">
+            <img class="menu-icons" src="./img/search.png" alt="search">
+            <img class="menu-icons" src="./img/phone.png" alt="phone">
+            <img class="menu-icons" src="./img/cart.png" alt="cart">
          </div>
       </div>
       <div class="equipment container">
-         <span>Оборудование</span>
-         <button>></button>
+         <div class="desc">Оборудование</div>
       </div>
-      <div class="swiper-container">
-         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
+      <div class="slider-container">
+         <div class="slider-wrapper">
+            <div class="slider__content">
+               <div class="text-up ">
+                  <p class="text slider-text">Портфолио</p>
+               </div>
+               <div class="subtitle slider">
+                  НИИ скорой помощи 
+                  им.&nbspН.В.  Склифосовского</div>
+               <div class="text slider-text1">Оборудование для пищеблоков
+               </div>
+               <a class="button button_orange desc button-desc" href="/">Подробнее</a>
+            </div>
+            <div class="slider__img">
+               <img src="./img/slider-1.png" alt="slider-1">
+            </div>
          </div>
-         <!-- Add Pagination -->
-         <div class="swiper-pagination"></div>
-         <!-- Add Arrows -->
-         <div class="swiper-button-next"></div>
-         <div class="swiper-button-prev"></div>
+         <div class="slider-pagination">
+            <div class="slider-pagination__bullet"></div>
+            <div class="slider-pagination__bullet  slider-pagination__bullet_active"></div>
+            <div class="slider-pagination__bullet"></div>
+            <div class="slider-pagination__bullet"></div>
+         </div>
+         <div class="slider-button-next"></div>
+         <div class="slider-button-prev"></div>
       </div>
       <div class="sale container">
-         <div class="sale-text">
-            <img src="./img/giftbox.png" alt="giftbox">
-            <span>
-               <p>Самые низкие цены</p>
-               <p>Распродажа</p>
-               <p>Каталог распродаж ></p>
-            </span>
+         <div class="sale-content">
+            <img class="sale-img" src="./img/giftbox.png" alt="giftbox">
+               <p class="text sale-text">Самые низкие цены</p>
+               <p class="title sale-title">Распродажа</p>
+               <p class="desc sale-desc">Каталог распродаж&nbsp</p>
          </div>
       </div>
 
@@ -88,19 +95,19 @@
          </div>
          <div>
             <a href="/">
-               <p>Все бренды</p>
+               <p class="desc brands-desc">Все бренды</p>
             </a>
          </div>
       </div>
       <div class="recommend container">
          <div class="recommend-text__wrapper">
             <div class="recommend-text">
-               <p class="recommend-text__title">Рекомендуем</p>
+               <p class="recommend-text__title title">Рекомендуем</p>
                <div class="recommend-text__description">
-                  <p>В этих разделах вы можете получить подробную</p>
-                  <p>информацию о пищевом оборудовании</p>
-                  <p>для столовых, ресторанов и кафе</p>
-                  <p>ведущих производителей.</p>
+                  <p class="desc recommend-desc">В этих разделах вы можете получить подробную</p>
+                  <p class="desc recommend-desc">информацию о пищевом оборудовании</p>
+                  <p class="desc recommend-desc">для столовых, ресторанов и кафе</p>
+                  <p class="desc recommend-desc">ведущих производителей.</p>
                </div>
             </div>
          </div>
@@ -109,9 +116,9 @@
                <a href="/">
                   <img class="recommend-item__img" src="./img/rec-item-1.png" alt="rec-item">
                   <div class="recommend-item__text">
-                     <p class="recommend-item__name">Unox</p>
-                     <p class="recommend-item__category">Пароконвектоматы</p>
-                     <span class="recommend-item__desc">
+                     <p class="recommend-item__name desc">Unox</p>
+                     <p class="recommend-item__category subtitle">Пароконвектоматы</p>
+                     <span class="recommend-item__desc text">
                         Благодаря своей универсальности пароконвектоматы быстро завоевывают пользователей
                         <p>по всему миру.</p>
                      </span>
@@ -122,9 +129,9 @@
                <a href="/">
                   <img class="recommend-item__img left" src="./img/rec-item-2.png" alt="rec-item">
                   <div class="recommend-item__text left">
-                     <p class="recommend-item__name black">Abat</p>
-                     <p class="recommend-item__category black">Тепловое оборудование</p>
-                     <span class="recommend-item__desc">
+                     <p class="recommend-item__name desc black">Abat</p>
+                     <p class="recommend-item__category subtitle black">Тепловое оборудование</p>
+                     <span class="recommend-item__desc text">
                         Более 55 лет успешно работает на рынке&nbsp&nbspторгово-технологического&nbspоборудования, по
                         праву занимая лидирующее положение в данном сегменте.
                      </span>
@@ -135,15 +142,14 @@
                <a href="/">
                   <img class="recommend-item__img hallde" src="./img/rec-item-3.png" alt="rec-item">
                   <div class="recommend-item__text hallde">
-                     <p class="recommend-item__name hallde">hallde</p>
-                     <p class="recommend-item__category hallde">Овощерезки</p>
-                     <span class="recommend-item__desc">
+                     <p class="recommend-item__name desc hallde">hallde</p>
+                     <p class="recommend-item__category subtitle hallde">Овощерезки</p>
+                     <span class="recommend-item__desc text">
                         Мощный двигатель переводит высокий крутящий момент на режущий инструмент
                      </span>
                   </div>
                </a>
             </div>
-
          </div>
 
       </div>
@@ -151,16 +157,16 @@
          <div class="logo">
             <img class="logo__img" src="./img/fork-and-knife-Big.png" alt="fork-and-knife-Big">
             <div class="title">Столовая.РУ</div>
-            <div class="text">создание оптимальных пищеблоков</div>
+            <div class="text logo">создание оптимальных пищеблоков</div>
          </div>
          <div class="company">
-            <p class="title logo">Группа компаний</p>
-            <p class="text logo">Показатели:</p>
+            <p class="title title_logo">Группа компаний</p>
+            <p class="desc desc_logo">Показатели:</p>
          </div>
-         <div class="numbers">
-            <p>На рынке: 5 лет</p>
-            <p>Объем контрактов: 4 млрд.р.</p>
-            <p>Количество контрактов: 620</p>
+         <div class="in-numbers">
+            <p class="desc desc-numbers">На рынке: 5 лет</p>
+            <p class="desc desc-numbers">Объем контрактов: 4 млрд.р.</p>
+            <p class="desc desc-numbers">Количество контрактов: 620</p>
          </div>
       </div>  
       <div class="about container">
@@ -179,11 +185,11 @@
       </div>
       <div class="contacts">
          <div class="contacts-titles">
-            <div class="contacts__information">Информация</div>
-            <div class="contacts__">Оборудование</div>
-            <div class="contacts__">Предложения</div>
-            <div class="contacts__">Контакты</div>
-            <div class="contacts__">Реквизиты</div>
+            <div class="contacts desc cont-desc">Информация</div>
+            <div class="contacts desc cont-desc">Оборудование</div>
+            <div class="contacts desc cont-desc">Предложения</div>
+            <div class="contacts desc cont-desc">Контакты</div>
+            <div class="contacts desc cont-desc">Реквизиты</div>
          </div>
       </div>
       <div class="footer">
@@ -194,7 +200,7 @@
                <p class="text footer-text">Создание оптимальных пищеблоков</p>
             </div>
          </div>
-         <p class="footer-bottom-text">Сайт разработан NTI-systems</p>
+         <p class="subtitle bottom-subtitle">Сайт разработан NTI-systems</p>
       </div>
    </div>
 </body>
