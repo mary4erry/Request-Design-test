@@ -12,6 +12,7 @@
    padding: 0px;
    margin: 0px;
    text-decoration: none;
+   list-style-type: none;
 }
 
 html,
@@ -149,19 +150,20 @@ div{
    max-width: 767px;
    margin: 0 auto;
 }
-
-@media (min-width: 767px) {
-   .page {
-      width: 1920px;
-   }
+.top-menu{
+   // visibility: hidden;
+   display: none;
 }
-
 .container {
    margin-left: 29px;
    margin-right: 46px;
 }
+
 .button{
    border-radius: 27px;
+   &:hover{
+      box-shadow: 0 0 5px #faad3d;
+   }
    &_orange{
       padding: 13px 35px 9px 32px;;
       background-color: #faad3d;
@@ -180,6 +182,7 @@ div{
       align-items: center;
 
       .nav-circle {
+         display: block;
          margin-right: 31px;
       }
 
