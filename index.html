@@ -5,68 +5,244 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/media.css">
    <title>Document</title>
 </head>
 
 <body>
    <div class="page">
-      <div class="menu container">
-         <div class="navigation-logo">
-            <div class="navigation-logo__nav">
-               <img class="nav-circle" src="./img/ellips_1.png" alt="ellips_1">
+      <header class="header-desktop">
+         <div class="top-menu">
+            <div class=" container">
+               <nav class="navigation">
+               <ul class="navigation-company">
+                  <li>
+                     <a href="/"> Компания</a>
+                  </li>
+                  <li>
+                     <a href="/">Портфолио</a>
+                  </li>
+                  <li>
+                     <a href="/">Проектирование</a>
+                  </li>
+               </ul>
+               <ul class="navigation-clients">
+                  <li>
+                     <a href="/">Ресторанам</a>
+                  </li>
+                  <li>
+                     <a href="/">Застройщикам</a>
+                  </li>
+                  <li>
+                     <a href="/">Гос.заказчикам</a>
+                  </li>
+                  <li>
+                     <a href="/">Таблет- питание</a>
+                  </li>
+               </ul>
+               <ul class="navigation-contacts">
+                  <li>
+                     <a href="/">Сервис</a>
+                  </li>
+                  <li>
+                     <a href="/">Контакты</a>
+                  </li>
+                  <li>
+                     <img class="email-icon" src="./img/email.png" alt="email">
+                     <a href="/">info@stolovay.ru</a>
+                  </li>
+                  <li>
+                     <img class="phone-icon" src="./img/telephone.png" alt="telephone">
+                     <a href="/">8 495 790-72-05</a>
+                  </li>
+               </ul>
+            </nav>
             </div>
-            <div class="navigation-logo__logo">
-               <img class="logo-min" src="./img/fork-and-knife.png" alt="fork-and-knife">
-               <span>
-                  <p class="subtitle logo-subtitle">Столовая.РУ</p>
-                  <p class="slogan logo-slogan">Создание пищеблоков</p>
-               </span>
-            </div>
+            
          </div>
-         <div class="menu__facilities">
-            <img class="menu-icons" src="./img/search.png" alt="search">
-            <img class="menu-icons" src="./img/phone.png" alt="phone">
-            <img class="menu-icons" src="./img/cart.png" alt="cart">
-         </div>
-      </div>
-      <div class="equipment container">
-         <div class="desc">Оборудование</div>
-      </div>
-      <div class="slider-container">
-         <div class="slider-wrapper">
-            <div class="slider__content">
-               <div class="text-up ">
-                  <p class="text slider-text">Портфолио</p>
+         <div class="menu container">
+            <div class="navigation-logo">
+               <div class="navigation-logo__nav">
+                  <img class="nav-circle" src="./img/ellips_1.png" alt="ellips_1">
                </div>
-               <div class="subtitle slider">
-                  НИИ скорой помощи 
-                  им.&nbspН.В.  Склифосовского</div>
-               <div class="text slider-text1">Оборудование для пищеблоков
+               <div class="navigation-logo__logo">
+                  <img class="logo-min" src="./img/fork-and-knife.png" alt="fork-and-knife">
+                  <span class="logo-text">
+                     <p class="subtitle logo-subtitle">Столовая.РУ</p>
+                     <p class="slogan logo-slogan">Создание пищеблоков</p>
+                  </span>
                </div>
-               <a class="button button_orange desc button-desc" href="/">Подробнее</a>
+               
             </div>
-            <div class="slider__img">
-               <img src="./img/slider-1.png" alt="slider-1">
+            <form class="search-form">
+               <div class="search__categories">
+                  <div class="categories-all">
+                     Все
+                  </div>
+               </div>
+               <div class="search-input">
+                  <input type="text" name='search-input'>
+               </div>
+               <div class="search-button">
+                  <button type="submit">
+                     <img src="./img/searchBtn.png" alt="searchBtn">
+                  </button>
+               </div>
+                  
+            </form>
+            <div class="menu-suppliers">
+               <a href="/">
+                  <img class="suppliers-img" src="./img/portalpostavschikov.png" alt="">
+                  <div>
+                     <p class="menu-text text suppliers-text">Мы на портале </p>
+                     <p class="menu-text text suppliers-text"> поставщиков</p>
+                  </div>   
+            </a>
             </div>
-         </div>
-         <div class="slider-pagination">
-            <div class="slider-pagination__bullet"></div>
-            <div class="slider-pagination__bullet  slider-pagination__bullet_active"></div>
-            <div class="slider-pagination__bullet"></div>
-            <div class="slider-pagination__bullet"></div>
-         </div>
-         <div class="slider-button-next"></div>
-         <div class="slider-button-prev"></div>
-      </div>
-      <div class="sale container">
-         <div class="sale-content">
-            <img class="sale-img" src="./img/giftbox.png" alt="giftbox">
-               <p class="text sale-text">Самые низкие цены</p>
-               <p class="title sale-title">Распродажа</p>
-               <p class="desc sale-desc">Каталог распродаж&nbsp</p>
-         </div>
-      </div>
 
+            <div class="menu__facilities">
+               <img class="menu-icons" src="./img/search.png" alt="search">
+               <img class="menu-icons" src="./img/phone.png" alt="phone">
+               <img class="menu-icons" src="./img/cart.png" alt="cart">
+               <div class="menu-cart-text">
+                  <p class="cart-sum">Сумма</p>
+                  <p class="cart-num">150 000 руб.</p>
+               </div>
+            </div>
+         </div>
+         <div class="equipment-wrapper">
+            <div class="equipment container-eq">
+            <div class=" equipment-desc desc">Оборудование</div>
+            <div class="categories">
+               <ul class="categories-list">
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-1.png" alt="equipment-img-1">
+                     <p class="categories-text text">Тепловое</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-2.png" alt="equipment-img-1">
+                     <p class="categories-text text">Холодильное</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-3.png" alt="equipment-img-1">
+                     <p class="categories-text text">Электромеханическое</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-4.png" alt="equipment-img-4">
+                     <p class="categories-text text">Посудомоечное</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-5.png" alt="equipment-img-5">
+                     <p class="categories-text text">Хлебопекарное</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-6.png" alt="equipment-img-6">
+                     <p class="categories-text text">Линии раздачи</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-7.png" alt="equipment-img-7">
+                     <p class="categories-text text">Нейтральное</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-8.png" alt="equipment-img-8">
+                     <p class="categories-text text">Для фаст фуда</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-9.png" alt="equipment-img-9">
+                     <p class="categories-text text">Для залов</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-10.png" alt="equipment-img-10">
+                     <p class="categories-text text">Вспомогательное</p>
+                  </li>
+                  <li class='categories-item'>
+                     <img class="categories-img" src="./img/equipment-img-11.png" alt="equipment-img-11">
+                     <p class="categories-text text">Для магазинов</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         </div>
+         
+      </header>
+ 
+      <section class="main-block container-main">
+         <div class="main-content-wrapper">
+            <div class="offers">
+               <div class="offers-title">
+                  <p>Целевые предложения</p>
+                  
+               </div>
+               <div class="offers-list-wrapper">
+                  <ul class="offers-list">
+                     <li>
+                        <a href="">Кафе, барам, ресторанам</a>
+                     </li>
+                     <li>
+                        <a href="">Дестким садам и школам</a>
+                     </li>
+                     <li>
+                        <a href="">Таблет-питание</a>
+                     </li>
+                     <li>
+                        <a href="">Для столовых</a>
+                     </li>
+                     <li>
+                        <a href="">Для пищеблоков</a>
+                     </li>
+                     <li>
+                        <a href="">Государственным заказкам</a>
+                     </li>
+                     <li>
+                        <a href="">Для магазинов</a>
+                     </li>
+                     <li>
+                        <a href="">Для войсковых частей</a>
+                     </li>
+                     <li>
+                        <a href="">Все предложения</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="slider-container">
+               <div class="slider-wrapper">
+                  <div class="slider__content">
+                     <div class="text-up ">
+                        <p class="text slider-text">Портфолио</p>
+                     </div>
+                     <div class="subtitle slider">
+                        НИИ скорой помощи 
+                        им.&nbspН.В.  Склифосовского</div>
+                     <div class="text slider-text1">Оборудование для пищеблоков
+                     </div>
+                     <a class="button button_orange desc button-desc" href="/">Подробнее</a>
+                  </div>
+                  <div class="slider__img">
+                     <img src="./img/slider-1.png" alt="slider-1">
+                  </div>
+               </div>
+               <div class="slider-pagination">
+                  <div class="slider-pagination__bullet"></div>
+                  <div class="slider-pagination__bullet  slider-pagination__bullet_active"></div>
+                  <div class="slider-pagination__bullet"></div>
+                  <div class="slider-pagination__bullet"></div>
+               </div>
+               <div class="slider-button-next"></div>
+               <div class="slider-button-prev"></div>
+            </div>
+            <div class="sale container container-main-last">
+               <div class="sale-content">
+                  <img class="sale-img" src="./img/giftbox.png" alt="giftbox">
+                     <p class="text sale-text">Самые низкие цены</p>
+                     <p class="title sale-title">Распродажа</p>
+                     <p class="desc sale-desc">Каталог распродаж&nbsp</p>
+               </div>
+            </div>
+         </div>
+         
+      </section>
+      
       <div class="brands container">
          <div>
             <a href="/">

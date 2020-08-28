@@ -1,0 +1,369 @@
+
+@font-face {
+   font-family: 'Myriad';
+   src: url(../fonts/MyriadPro.ttf);
+}
+
+@font-face {
+   font-family: 'Myriad Light';
+   src: url(../fonts/MyriadProLight.otf);
+}
+@media (min-width: 767px) {
+   // body {
+   //    width: 1920px;
+   // }
+
+   .text{
+      font-family: "Myriad";
+      font-size: 16px;
+      font-weight: 400;
+      &.categories-text{
+         color: #343434;
+         // line-height: 26px;
+      }
+      &.menu-text{
+         color: #ffffff;
+      }
+   }
+   
+
+   .page {
+      // max-width: 1920px;
+   }
+   .container {
+      margin: 0 189px 0 188px;
+
+      &.container-main-last{
+      margin: 0;
+      }
+   }
+   .container-main{
+      margin: 0 189px 0 188px;
+   }
+   .container-eq{
+      padding: 0 184px 0 185px;
+   }
+   .header-desktop{
+      width: 100%;
+      background: transparent;
+      height: 233px;
+   }
+   
+   
+   .top-menu {
+      background-image: url(../img/header-bg.png);
+
+      display: block;
+      height: 48px;
+      margin: 0 auto;
+      // background-color: #00aa4b;
+      // & ul{
+      //    display: flex;
+      //    flex-direction: row;
+      //    justify-content: space-between;
+      // }
+      & li{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+      }
+      & a{
+         color: #ffffff;
+         font-family: "Myriad";
+         font-size: 16px;
+         font-weight: 400;
+      }
+      // & img{
+      //    margin-right: 1px;
+      // }
+      .email-icon{
+         margin-right: 1px;
+         height: 14px;
+         width: 15px;
+      }
+      .phone-icon{
+         height: 16px;
+         width: 16px;
+      }
+      .navigation{
+         height: 48px;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+
+         &-company{
+            width: 26%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 0;
+            padding-right: 2%;
+            // & li:last-child::after{
+            //    content: '|';
+            //    color: #f3f1f1; 
+            // }
+         }
+         &-clients{
+            padding: 0 2%;
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+         }
+         &-contacts{
+            width: 37%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 2%;
+            padding-right: 0;
+         }
+      }
+   }
+   .menu {
+      height: 64px;
+      .navigation-logo {
+         width: 268px;
+         .navigation-logo__nav {
+            display: none;
+         }
+         &__logo{
+            align-items: center;
+            
+            .logo-min {
+               margin-right: 5px;
+               height: 40px;
+               width: 40px;
+               // width: 55px;
+            }
+            .logo-text{
+               margin-top: 15px;
+            }
+            .subtitle.logo-subtitle{
+               font-size: 33px;
+               // line-height: 33px;
+            }
+            .logo-slogan{
+               display: none;
+            }
+         }
+      }
+      .search-form{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         .search__categories{
+            position: relative;
+            border: 1px solid #e8e7e7;
+            background-color: #f1f1f1;
+            border-radius: 5px 0 0 5px;
+            line-height: 35px;
+            padding: 0 23px 0 17px;
+
+            &::after{
+               content: '';
+               position: absolute;
+               left: 50px;
+               top: 15px;
+               background-image: url('../img/triangle.png');
+               width: 12px;
+               height: 6px;
+            }
+            .categories-all{
+               color: #777777;
+               font-family: "Myriad";
+               font-size: 16px;
+               font-weight: 400;
+            }
+         }
+         .search-input input{
+            width: 770px;
+            background-color: #ffffff;
+            border: none;
+            height: 35px;
+            
+            & input{
+               border: none;
+               width: 100%;
+               padding: 0 10px;
+               outline: none;
+            }
+         }
+         .search-button{
+            align-items: center;
+            & button{
+               background-color: #ffaf2d;
+               border: none;
+               line-height: 35px;
+               border-radius: 0 5px 5px 0;
+               padding: 0 14px;
+               & img{
+                  vertical-align: middle
+               }
+            }            
+         }
+      }
+      .menu-suppliers{
+         display: block;
+         & a{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 140px;
+            .suppliers-img{
+               width: 35px;
+               height: 35px;
+               opacity: 0.9;
+               vertical-align: middle;
+               border-style: none;
+               margin-right: 7px;
+            }
+            .suppliers-text{
+               font-family: "Myriad Light";
+               font-weight: 400;
+         
+               font-size: 14px;
+               color: #777777;
+            }
+         }
+         
+      } 
+
+
+      &__facilities{
+         .menu-icons{
+            &:nth-of-type(3) {
+               position: relative;
+               width: 29px;
+               height: 27px;
+               margin-top: 20px;
+               margin-right: 12px;
+               color: #383838;
+            }
+            &:not(:nth-last-of-type(1)){
+               display: none;
+            }
+         }
+         .menu-cart-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .cart-sum{
+               color: #777777;
+               font-family: "Myriad Light";
+               font-size: 14px;
+               font-weight: 300;
+               line-height: 16px;
+            }
+         }
+      }
+   }
+   .equipment-wrapper{
+      
+      box-shadow: 4px 6px 18px rgba(0, 0, 0, 0.11);
+      background-color: #ffffff;
+      margin-bottom: 21px;
+      .equipment{
+         height: 100px;
+         background-color: transparent;
+         border: none;
+
+         & div::after {
+            display: none;
+         }
+         .equipment-desc{
+            display: none;
+         }
+         .categories{
+            width: 100%;
+            .categories-list{
+               // width: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               align-items: center;
+
+               .categories-item{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  .categories-img{
+                     width: 57px;
+                     height: 57px;
+                     border-radius: 50%;
+                     margin-bottom: 5px; 
+                  }
+               }
+               
+               
+            }
+         }
+         
+      }
+   }
+   .main-block {
+      
+   
+      .main-content-wrapper{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         .offers{
+            width: 19.4%;
+            background-color: #fff;
+            // width: 303px;
+           .offers-title{
+              padding: 30px;
+
+           } 
+           .offers-list-wrapper{
+            .offers-list{
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+   
+               & li{
+
+               }
+               & a{
+
+               }
+            }
+           }
+         }
+         
+         .slider-container{
+            height: 476px;
+            width: 58.4%;
+         }
+         .sale{
+            width: 19.4%;
+         }
+      }
+      
+   }
+   .brands {
+      display: flex;
+      height: 101px;
+      // grid-row-gap: 0.2px;
+      // grid-template-columns: 1fr 1fr;
+      // position: relative;
+      // margin-bottom: 140px;
+      & div {
+         // // width: 345.5px;
+         // // height: 169px;
+         // display: flex;
+         // justify-content: center;
+         // align-items: center;
+         // background-color: #ffffff;
+         & a{
+            & img{
+               height: 37px;
+            }
+         }
+      }
+   }
+   
+}
