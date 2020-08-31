@@ -105,6 +105,9 @@ div{
       line-height: 24px;
       color: #fff;
    }
+   &.brands-desc{
+      color: #282828;
+   }
 }
 .text{
    font-family: "Myriad Light";
@@ -300,6 +303,10 @@ div{
          text-align: left;
          }
       } 
+      .slider__img img{
+         position: absolute;
+         
+      }
    }
    .slider-pagination {
       display: flex;
@@ -428,8 +435,8 @@ div{
    // }
 
    & div {
-      // width: 345.5px;
-      // height: 169px;
+      width: 345.5px;
+      height: 169px;
       display: flex;
       justify-content: center;
       align-items: center;
