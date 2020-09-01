@@ -55,7 +55,7 @@
   .header-desktop .menu .navigation-logo__logo .subtitle.logo-subtitle { font-size: 33px; }
   .header-desktop .menu .navigation-logo__logo .logo-slogan { display: none; }
   .header-desktop .menu .search-form { display: flex; justify-content: space-between; align-items: center; }
-  .header-desktop .menu .search-form .search__categories { position: relative; border: 1px solid #e8e7e7; background-color: #f1f1f1; border-radius: 5px 0 0 5px; line-height: 35px; padding: 0 23px 0 17px; }
+  .header-desktop .menu .search-form .search__categories { position: relative; border: 1px solid #e8e7e7; background-color: #f1f1f1; border-radius: 5px 0 0 5px; line-height: 35px; padding: 0 27px 0 16px; }
   .header-desktop .menu .search-form .search__categories::after { content: ''; position: absolute; left: 50px; top: 15px; background-image: url("../img/triangle.png"); width: 12px; height: 6px; }
   .header-desktop .menu .search-form .search__categories .categories-all { color: #777777; font-family: "Myriad"; font-size: 16px; font-weight: 400; }
   .header-desktop .menu .search-form .search-input input { width: 770px; background-color: #ffffff; border: none; height: 35px; }
@@ -95,7 +95,6 @@
   .main-block .main-content-wrapper .slider-container .slider-wrapper .slider__content div:nth-child(2) { margin-bottom: 20px; }
   .main-block .main-content-wrapper .slider-container .slider-wrapper .slider__content div:nth-child(3) { margin-bottom: 78px; }
   .main-block .main-content-wrapper .slider-container .slider-wrapper .slider__img img { width: 256px; height: 357px; right: 82px; top: 71px; }
-  .main-block .main-content-wrapper .slider-container .slider-pagination div:not(:last-child) { margin-right: 17px; }
   .main-block .main-content-wrapper .slider-container .slider-pagination__bullet { width: 10px; height: 10px; }
   .main-block .main-content-wrapper .slider-container .slider-button-next, .main-block .main-content-wrapper .slider-container .slider-button-prev { display: none; }
   .brands { display: flex; height: 101px; grid-row-gap: 0; grid-template-columns: repeat(6, 1fr); margin-bottom: 174px; }
