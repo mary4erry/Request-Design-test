@@ -26,7 +26,6 @@ body {
 }
 div{
    box-sizing:border-box;
-
 }
 
 
@@ -365,7 +364,7 @@ div{
       .sale-img {
          width: 118px;
          height: 146px;
-         margin-bottom: 19px;
+         // margin-bottom: 19px;
       }
 
       .sale-desc{
@@ -447,6 +446,10 @@ div{
          }
       }
    }
+}
+
+.main-news{
+   display: none;
 }
 
 .recommend {

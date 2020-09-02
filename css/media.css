@@ -4,19 +4,21 @@
   .title.title_logo { font-size: 40px; }
   .title.info { color: #1d1d1d; }
   .title.footer-title { color: #fff; line-height: 1.25; }
-  .title.sale-title { line-height: 66px; }
+  .title.sale-title { line-height: 33px; font-size: 40px; }
+  .title.main-title { font-size: 40px; color: #121212; }
   .subtitle { color: #f3f1f1; font-family: "Myriad"; font-size: 40px; font-weight: 400; }
   .subtitle.slider { line-height: 1.05; }
   .subtitle.bottom-subtitle { color: #777777; letter-spacing: 1.3px; }
   .subtitle.logo-subtitle { color: #353535; font-size: 30px; line-height: 42px; }
   .subtitle.brands-subtitle { color: #282828; font-size: 30px; line-height: 66.93px; }
   .subtitle.offers-subtitle { color: #ffaf2d; font-size: 24px; }
+  .subtitle.news-subtitle { font-size: 24px; color: #121212; }
   .desc { font-family: "Myriad Light"; font-size: 30px; font-weight: 400; }
   .desc.desc_logo { color: #777777; font-size: 30px; line-height: 1.3; letter-spacing: 0px; }
   .desc.recommend-desc { color: #777777; line-height: 36px; }
   .desc.desc-numbers { letter-spacing: 0px; line-height: 1.2; }
   .desc.button-desc { font-size: 18px; color: #ffffff; line-height: 1.3; letter-spacing: -0.4px; }
-  .desc.sale-desc { color: #faad3d; line-height: 3.2; letter-spacing: 0px; }
+  .desc.sale-desc { color: #faad3d; line-height: 4.2; letter-spacing: 1px; font-size: 16px; }
   .desc.cont-desc { line-height: 24px; color: #fff; }
   .desc.brands-desc { color: #282828; }
   .text { font-family: "Myriad Light"; font-size: 25px; font-weight: 300; }
@@ -25,15 +27,19 @@
   .text.slider-text { color: #777; font-size: 16px; }
   .text.slider-text1 { color: #fff; line-height: 0.5; font-size: 18px; }
   .text.logo { color: #777777; line-height: 0.5; }
-  .text.sale-text { color: #191919; }
+  .text.sale-text { color: #191919; font-size: 18px; line-height: 39px; }
   .slogan { font-family: 'Myriad Light'; font-size: 18px; }
   .slogan.logo-slogan { color: #777777; line-height: 7px; letter-spacing: 0.28px; }
   .slogan.suppliers-slogan { font-size: 14px; color: #777777; }
   .slogan.categories-slogan { font-family: "Myriad"; font-size: 16px; color: #343434; }
   .slogan.offers-slogan { color: #303030; font-size: 16px; }
+  .slogan.producer-slogan { color: #00aa4b; font-size: 16px; font-family: "Myriad"; }
+  .button:hover { box-shadow: 0 0 5px #f1f1f1; }
   .button_orange { padding: 10px 20px 7px 19px; background-color: #faad3d; }
+  .button.button-news { padding: 9px 37px 7px 38px; border-radius: 17px; border: 2px solid #121212; color: #121212; }
   .container { margin: 0 189px 0 188px; }
   .container.container-main-last { margin: 0; }
+  .container-news { margin: 0 255px; }
   .container-main { margin: 0 188px 0 184px; }
   .container-eq { padding: 0 184px 0 185px; }
   .header-desktop { width: 100%; background: transparent; height: 211px; margin-bottom: 21px; }
@@ -97,8 +103,23 @@
   .main-block .main-content-wrapper .slider-container .slider-wrapper .slider__img img { width: 256px; height: 357px; right: 82px; top: 71px; }
   .main-block .main-content-wrapper .slider-container .slider-pagination__bullet { width: 10px; height: 10px; }
   .main-block .main-content-wrapper .slider-container .slider-button-next, .main-block .main-content-wrapper .slider-container .slider-button-prev { display: none; }
-  .brands { display: flex; height: 101px; grid-row-gap: 0; grid-template-columns: repeat(6, 1fr); margin-bottom: 174px; }
+  .main-block .main-content-wrapper .sale { padding: 219px 0 0 28px; }
+  .main-block .main-content-wrapper .sale-content .sale-img { width: 70px; height: 86px; }
+  .brands { display: flex; height: 101px; grid-row-gap: 0; grid-template-columns: repeat(6, 1fr); margin-bottom: 168px; }
   .brands > div:not(:last-child) { border-right: 1px solid #e8e7e7; }
   .brands :nth-child(odd)::after { display: none; }
   .brands div { height: 100px; line-height: 5px; }
-  .brands div a img { height: 32px; } }
+  .brands div a img { height: 32px; }
+  .main-news { display: block; margin-bottom: 172px; }
+  .main-news .container-news .main-title { margin-bottom: 42px; }
+  .main-news .container-news .news-content { display: flex; flex-direction: row; }
+  .main-news .container-news .news-content .news-left { max-width: 488px; margin-right: 105px; margin-bottom: 58px; }
+  .main-news .container-news .news-content .news-left .news-left__item .news-left__img img { margin-bottom: 20px; }
+  .main-news .container-news .news-content .news-left .news-left__item .news-left__text .news-left__data { display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 12px; }
+  .main-news .container-news .news-content .news-left .news-left__item .news-left__text .news-left__subtitle { margin-bottom: 15px; }
+  .main-news .container-news .news-content .news_right .news-right__item { display: flex; flex-direction: row; }
+  .main-news .container-news .news-content .news_right .news-right__item:not(:last-child) { margin-bottom: 36px; }
+  .main-news .container-news .news-content .news_right .news-right__item .news_right__img { margin-right: 20px; }
+  .main-news .container-news .news-content .news_right .news-right__item .news-right__text .news-right__data { display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 7px; }
+  .main-news .container-news .news-content .news_right .news-right__item .news-right__text .data_middle { flex-direction: column; }
+  .main-news .container-news .news-content .news_right .news-right__item .news-right__text .news-right__subtitle { margin-bottom: 15px; } }

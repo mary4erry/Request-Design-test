@@ -28,7 +28,12 @@
          line-height: 1.25;
       }
       &.sale-title{
-         line-height: 66px;
+         line-height: 33px;
+         font-size: 40px;
+      }
+      &.main-title{
+         font-size: 40px;
+         color: #121212;
       }
    }
    .subtitle{
@@ -56,7 +61,10 @@
       &.offers-subtitle{
          color: #ffaf2d;
          font-size: 24px;
-         // line-height: 45px;
+      }
+      &.news-subtitle{
+         font-size: 24px;
+         color: #121212;;
       }
    }
    .desc{
@@ -86,8 +94,9 @@
       }
       &.sale-desc{
          color: #faad3d;
-         line-height: 3.2;
-         letter-spacing: 0px;
+         line-height: 4.2;
+         letter-spacing: 1px;
+         font-size: 16px;
       }
       &.cont-desc{
          line-height: 24px;
@@ -127,6 +136,8 @@
       }
       &.sale-text{
          color: #191919;
+         font-size: 18px;
+         line-height: 39px;
       }
       
    }
@@ -154,25 +165,28 @@
          color: #303030;
          font-size: 16px;
       }
+      &.producer-slogan{
+         color: #00aa4b;
+         font-size: 16px;
+         font-family: "Myriad";
+      }
    }
-   // .text{
-   //    font-family: "Myriad";
-   //    font-size: 16px;
-   //    font-weight: 400;
-   //    &.menu-text{
-        
-   //    }
-      
-   // }
    
    .button{
       // border-radius: 27px;
       &:hover{
-         // box-shadow: 0 0 5px #faad3d;
+         box-shadow: 0 0 5px #f1f1f1;
       }
       &_orange{
          padding: 10px 20px 7px 19px;
          background-color: #faad3d;
+      }
+      &.button-news{
+         padding: 9px 37px 7px 38px;
+         border-radius: 17px;
+         border: 2px solid #121212;
+         color: #121212;
+
       }
    }
 
@@ -184,8 +198,11 @@
 
       &.container-main-last{
       margin: 0;
-      }
+      } 
    }
+   .container-news{
+         margin: 0 255px;
+      }
    .container-main{
       margin: 0 188px 0 184px;
    }
@@ -538,7 +555,15 @@
             
          }
          .sale{
+            padding: 219px 0 0 28px;
             // width: 19.4%;
+
+            &-content {
+               .sale-img {
+                  width: 70px;
+                  height: 86px;
+               }
+            }
          }
       }
       
@@ -549,7 +574,7 @@
       height: 101px;
       grid-row-gap: 0;
       grid-template-columns:  repeat(6, 1fr);
-      margin-bottom: 174px;
+      margin-bottom: 168px;
       // position: relative;
       // margin-bottom: 140px;
       
@@ -590,6 +615,72 @@
          //    // position: absolute;
          //    // left: 10px;
          // }
+      }
+   }
+
+   .main-news{
+      display:block;
+      margin-bottom: 172px;
+      .container-news{
+         .main-title{
+            margin-bottom: 42px;
+         }
+         .news-content{
+            display: flex;
+            flex-direction: row;
+
+            .news-left{
+               max-width: 488px;
+               margin-right: 105px;
+               margin-bottom: 58px;
+               .news-left__item{
+                  
+                  .news-left__img{
+                     // max-height: 305px;
+                     & img{
+                        margin-bottom: 20px;
+                     }
+                  }
+                  .news-left__text{
+                     .news-left__data{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-bottom: 12px;
+                     }
+                     .news-left__subtitle{
+                        margin-bottom: 15px;
+                     }
+                  }
+               }
+            }
+            .news_right{
+               .news-right__item{
+                  display: flex;
+                  flex-direction: row;
+                  &:not(:last-child){
+                     margin-bottom: 36px;
+                  }
+                  .news_right__img{
+                     margin-right: 20px;
+                  }
+                  .news-right__text{
+                     .news-right__data{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-bottom: 7px;
+                     }
+                     .data_middle{
+                        flex-direction: column;
+                     }
+                     .news-right__subtitle{
+                        margin-bottom: 15px;
+                     }
+                  }
+               }
+            }
+         }
       }
    }
    
