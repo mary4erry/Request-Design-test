@@ -15,7 +15,7 @@
    .title{
       color: #000000;
       font-family: "Myriad";
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 400; 
       &.title_logo{
          font-size: 40px;
@@ -64,7 +64,16 @@
       }
       &.news-subtitle{
          font-size: 24px;
-         color: #121212;;
+         color: #121212;
+      }
+      &.rec-subtitle{
+         font-size: 30px;
+         color: #121212;
+         line-height: 39px;
+         letter-spacing: 0.4px;
+         &.black{
+            color: #ffffff;
+         }
       }
    }
    .desc{
@@ -79,8 +88,17 @@
          letter-spacing: 0px;
       }
       &.recommend-desc {
+         font-size: 16px;
          color: #777777;
-         line-height: 36px;
+         line-height: 20px;
+      }
+      &.rec-desc{
+         font-size: 20px;
+         color: #121212;
+         &.black{
+            color: #ffffff;
+            margin-bottom: 0;
+         }
       }
       &.desc-numbers{
          letter-spacing: 0px;
@@ -138,6 +156,11 @@
          color: #191919;
          font-size: 18px;
          line-height: 39px;
+      }
+      &.rec-text{
+         font-size: 16px;
+         color: #777777;
+         letter-spacing: 0.2px;
       }
       
    }
@@ -208,6 +231,9 @@
    }
    .container-eq{
       padding: 0 184px 0 185px;
+   }
+   .container-rec{
+      padding: 0px 261px 0 267px;
    }
    .header-desktop{
       width: 100%;
@@ -469,11 +495,8 @@
          display: grid;
          grid-template-columns: 303px 902px 300px;
          column-gap: 21px;
-         // display: flex;
-         // flex-direction: row;
-         // justify-content: space-between;
          .offers{
-            // width: 19.4%;
+            display: block;
             background-color: #fff;
 
            .offers-title{
@@ -556,7 +579,7 @@
          }
          .sale{
             padding: 219px 0 0 28px;
-            // width: 19.4%;
+            margin: 0;
 
             &-content {
                .sale-img {
@@ -683,5 +706,100 @@
          }
       }
    }
+   .recommend {
+      &-text__wrapper{
+         margin-bottom: 62px;
+      }
+      &-text{
    
+         &__title{
+         }
+         .recommend-desc{
+            padding: 0 330px;
+         }
+      }
+      .recommend-list{
+         display: flex;
+         flex-direction: row;
+         .recommend-item{
+            &.rec-first,&.black,&.hallde{
+               display: none;
+            }
+            .recommend-item__category{
+               margin-bottom: 19px;
+            }
+            &.rec-left{
+               position: relative;
+               width: 43.2%;
+               height: 745px;
+               background-color: #ffffff;
+               margin-right: 13px;
+              text-align: center;
+               .recommend-item__img{
+                  position: absolute;
+                  width: 433px;
+                  height: 481px; 
+                  bottom: 0;
+                  left: calc( 50% - 417px / 2 ) ;
+               }
+               .recommend-item__text{
+                  margin-top: 0;
+                  padding: 67px 155px;
+                  .recommend-item__name{
+                     // margin-bottom: 20px;
+                  }
+                  .recommend-item__category {
+                     // margin-bottom: 19px;
+                 }
+               }
+            }   
+         }
+         .rec-right{
+            
+            width: 56.8%;
+            display: flex;
+            flex-direction: column;
+            .recommend-item{
+               position: relative;
+               height: 316px;
+
+               &:first-child{
+                  background-color: #282828;
+                  height: 419px;
+                  margin-bottom: 10px;
+                  .recommend-item__img{
+                     position: absolute;
+                     top: 17px;
+                     width: 190px;
+                     height: 389px;
+                  }
+                  a .recommend-item__text{
+                     margin: 0;
+                     padding: 119px 125px 0 248px;
+                     .recommend-item__name{
+                        // margin-bottom: 10px;
+                     }
+                  }
+               }
+               &:last-child{
+                  // height: 419px;
+                  .recommend-item__img{
+                     width: 294px;
+                     height: 308px;
+                     position: absolute;
+                     right: 0;
+                     top: 8px;
+                  }  
+                  .recommend-item__text{
+                     margin: 0;
+                     padding: 94px 335px 0 60px;
+                  }
+               }
+               
+               
+            }
+         }
+      }
+      
+   }
 }
