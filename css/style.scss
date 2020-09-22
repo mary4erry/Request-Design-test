@@ -17,8 +17,8 @@
 
 html,
 body {
-   height: 100%;
-   width: 100%;
+   // height: 100%;
+   // width: 100%;
    background-color: #f1f1f1;
    box-sizing:border-box;
    color: #000000;
@@ -28,7 +28,7 @@ a{
    color: #000000;
 }
 div{
-   box-sizing:border-box;
+   box-sizing: border-box;
 }
 
 
@@ -154,7 +154,7 @@ div{
 
 .page {
    height: 100vh;
-   // max-width: 767px;
+   width: 100%;
    margin: 0 auto;
 }
 
@@ -242,7 +242,7 @@ div{
             margin-top: 6px;
          }
       }
-      .menu-cart-text{
+      .cart-desc{
          display: none;
       }
    }
@@ -253,24 +253,21 @@ div{
       justify-content: space-between;
       align-items: center;
       height: 83px;
-      // width: 100%;
       border-top: 1px solid #e2e2e2;
       background-color: #f1f1f1;
       cursor: pointer;
 
       & div::after {
-            // display: none;
-            content: '>';
-            color: #777777;
+         // display: none;
+         content: '>';
+         color: #777777;
       }
 
       .categories{
          .categories-list{
             display: none;
-            }
-      }
-
-      
+         }
+      }  
    }
 }
 
@@ -284,7 +281,7 @@ div{
          position: relative;
          height: 556px;
          width: 100%;
-         padding: 62px 54px 44px 31px;
+         // padding: 62px 312px 44px 31px;
          background-color: #282828;
 
          .slider-wrapper {
@@ -294,11 +291,12 @@ div{
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            margin-bottom: 42px;
+            // -webkit-box-pack: center;
+            // -ms-flex-pack: center;
+            // -webkit-justify-content: center;
+            // justify-content: center;
+            padding: 62px 312px 77px 31px;
+            // margin-bottom: 42px;
             .slider__content{
                padding-top: 22px;
                div:first-child{
@@ -316,7 +314,7 @@ div{
             } 
             .slider__img img{
                position: absolute;
-               
+               right: 53px;
             }
          }
          .slider-pagination {
@@ -364,30 +362,28 @@ div{
       }
       
       .sale {
+
          background-color: #fff;
          height: 477px;
          padding: 80px 59px;
-         margin-top: 30px;
-         margin-bottom: 30px;
+         margin: 30px 46px 30px 30px;
+         // margin-top: 30px;
+         // margin-bottom: 30px;
          border-radius: 2px;
          border: 2px solid #faad3d;
 
-         &-content {
-            .sale-img {
-               width: 118px;
-               height: 146px;
-               // margin-bottom: 19px;
+         .sale-img {
+            width: 118px;
+            height: 146px;
+            margin-bottom: 19px;
+         }
+         .sale-desc{
+            &:hover::after{
+               content: ' >';
             }
-
-            .sale-desc{
-               &:hover::after{
-                        content: ' >';
-                     }
-                  &:hover{
-                     cursor: pointer;
-                     
-                  }
-               }
+            &:hover{
+               cursor: pointer;
+            }
          }
       }
    }
@@ -553,19 +549,25 @@ div{
       }
    }
 }
+
+.about-us{
+   display: flex;
+   flex-direction: column-reverse;
+}
 .company-info{
    margin-left: 86px;
    margin-bottom: 129px;
-}
-.logo{
-   &__img{
-      margin-bottom: 51px;
+   .logo{
+      &__img{
+         margin-bottom: 51px;
+      }
+   }
+   .company{
+      margin-top: 61px;
+      margin-bottom: 33px;
    }
 }
-.company{
-   margin-top: 61px;
-   margin-bottom: 33px;
-}
+
 .about{
    margin-bottom: 54px;
    & div:first-child{
@@ -580,7 +582,7 @@ div{
    background-color: #282828;
    padding:  50px 68px 39px 51px;
 
-   & * div {
+   .contacts-title {
       padding: 35px 0;
       cursor: pointer;
       border-bottom: solid 1px #4b4b4b;
@@ -595,13 +597,17 @@ div{
 .footer{
    background-color: #1f1f1f;
    padding: 45px 68px 39px 49px;
-   &-logo{
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 29px;
-      & img{
-         margin-right: 24px;
+   .footer-content{
+      .footer-logo{
+         display: flex;
+         flex-direction: row;
+         margin-bottom: 29px;
+         & img{
+            margin-right: 24px;
+         }
       }
    }
+   
+   
 }
 
