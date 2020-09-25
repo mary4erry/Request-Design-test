@@ -100,7 +100,7 @@ div{
    }
    &.sale-desc{
       color: #faad3d;
-      line-height: 3.2;
+      line-height: 93px;
       letter-spacing: 0px;
    }
    &.cont-desc{
@@ -115,7 +115,7 @@ div{
    font-family: "Myriad Light";
    font-size: 25px;
    font-weight: 300;
-   &.info{
+   &.text-info{
       color: #191919;
       font-size: 30px;
       line-height: 1.2;
@@ -166,7 +166,7 @@ div{
    margin-right: 45px;  
 }
 .container-rec{
-   padding: 0 29px 0 45px;
+   padding: 0px 43px 0 29px;
 }
 .container-main{
    margin: 0;
@@ -364,8 +364,8 @@ div{
       .sale {
 
          background-color: #fff;
-         height: 477px;
-         padding: 80px 59px;
+         height: 476px;
+         padding: 80px 58px;
          margin: 30px 46px 30px 30px;
          // margin-top: 30px;
          // margin-bottom: 30px;
@@ -375,7 +375,7 @@ div{
          .sale-img {
             width: 118px;
             height: 146px;
-            margin-bottom: 19px;
+            margin-bottom: 17px;
          }
          .sale-desc{
             &:hover::after{
@@ -394,7 +394,7 @@ div{
    grid-row-gap: 0.2px;
    grid-template-columns: 1fr 1fr;
    position: relative;
-   margin-bottom: 140px;
+   margin-bottom: 141px;
 
    & :nth-child(odd) {
 
@@ -445,7 +445,7 @@ div{
 
    & div {
       width: 345.5px;
-      height: 169px;
+      height: 171px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -465,7 +465,7 @@ div{
 .recommend {
    margin-bottom: 153px;
    &-text__wrapper{
-      margin-bottom: 73px;
+      margin-bottom: 72px;
    }
    &-text{
       text-align: center;
@@ -476,107 +476,125 @@ div{
          margin-bottom: 12px;
       }
    }
-   
-   &-item{
-      height: 483px;
-      background-color: #ffffff;
-      &.rec-first{
-         padding: 30px 0 0 67px;
-         margin-bottom: 10px;
-      }
-      &.black {
-         background: #282828; 
-         padding: 53px 41px 0 0;
-         margin-bottom: 10px;
-      }
-      &.hallde{
-         padding: 71px 0 0 68px;
-      }
-      & a{
-         width: 100%;
-      }
-      &__img{
-         width: 233px;
-         height: 453px;
-         float: right; 
-         &.left{
-            float: left;
-            width: 232px;
-            height: 398px;
+   .recommend-list{
+      .recommend-item{
+         height: 483px;
+         background-color: #ffffff;
+         &.rec-first{
+            padding: 30px 0 0 67px;
+            margin-bottom: 10px;
+         }
+         &.black {
+            background: #282828; 
+            padding: 53px 41px 0 0;
+            margin-bottom: 10px;
          }
          &.hallde{
-            width: 241px;
-            height: 371px;
+            padding: 71px 0 0 68px;
+         }
+         & a{
+            width: 100%;
+         }
+         &__img{
+            width: 233px;
+            height: 453px;
+            float: right; 
+            &.left{
+               float: left;
+               width: 232px;
+               height: 398px;
+            }
+            &.hallde{
+               width: 241px;
+               height: 371px;
+            }
+         }
+         &__text{
+            margin-top: 82px;
+            &.left{
+               margin-left: 276px;
+               margin-top: 15px;
+            }
+            &.hallde{
+               margin-top: 63px;
+            }
+         }
+         &__name{
+            text-transform: uppercase;
+            margin-bottom: 11px;
+            &.black{
+               color: #ffffff;
+               margin-bottom: 20px;
+            }
+            &.hallde{
+               margin-bottom: 6px;
+            }
+         }
+         &__category{
+            color: #191919;
+            margin-bottom: 45px;
+            span{
+               display: block
+            }
+            &.black{
+               color: #ffffff;
+               margin-bottom: 54px;
+            }
+            &.hallde{
+               margin-bottom: 43px;
+            }
+         }
+         &__desc{
+            color: #777777;
+         }
+         &.rec-left, &.rec-right{
+            display: none;
          }
       }
-      &__text{
-         margin-top: 82px;
-         &.left{
-            margin-left: 276px;
-            margin-top: 15px;
-         }
-         &.hallde{
-            margin-top: 63px;
-         }
-      }
-      &__name{
-         text-transform: uppercase;
-         // margin-bottom: 10px;
-         &.black{
-            color: #ffffff;
-            margin-bottom: 20px;
-         }
-         &.hallde{
-            margin-bottom: 6px;
-         }
-      }
-      &__category{
-         color: #191919;
-         margin-bottom: 45px;
-         span{
-            display: block
-         }
-         &.black{
-            color: #ffffff;
-            margin-bottom: 54px;
-         }
-         &.hallde{
-            margin-bottom: 43px;
-         }
-      }
-      &__desc{
-         color: #777777;
-      }
-   }
+   } 
 }
 
 .about-us{
-   display: flex;
-   flex-direction: column-reverse;
-}
-.company-info{
-   margin-left: 86px;
-   margin-bottom: 129px;
-   .logo{
-      &__img{
-         margin-bottom: 51px;
+   .container-about{
+      // padding: 0px 43px 0 29px;
+      display: flex;
+      flex-direction: column-reverse;
+      .company-info{
+         margin-left: 57px;
+         margin-bottom: 129px;
+         .logo{
+            &__img{
+               margin-bottom: 51px;
+            }
+         }
+         .company{
+            margin-top: 61px;
+            margin-bottom: 33px;
+         }
       }
+      .about{
+         margin-bottom: 54px;
+         
+         & div:first-child{
+            margin-bottom: 51px;
+         }
+         & div:last-child{
+            display: none;
+         }
+      } 
    }
-   .company{
-      margin-top: 61px;
-      margin-bottom: 33px;
-   }
-}
 
-.about{
-   margin-bottom: 54px;
-   & div:first-child{
-      margin-bottom: 51px;
-   }
-} 
+   
+}
+.container-about{
+   padding: 0px 43px 0 29px;}
 .plus{
    margin-bottom: 151px;
    cursor: pointer;
+
+   img {
+      margin-left: 30px;
+   }
 }
 .contacts{
    background-color: #282828;
@@ -591,6 +609,9 @@ div{
          content: '+';
          float: right;
       }
+   }
+   .contacts-list{
+      display: none;
    }
 }
 

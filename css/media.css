@@ -130,7 +130,7 @@
   }
   .text.text-info {
     font-size: 18px;
-    line-height: 21px;
+    line-height: 23px;
   }
   .text.footer-text {
     font-size: 16px;
@@ -230,16 +230,6 @@
   }
   .container-rec {
     padding: 0px 261px 0 267px;
-  }
-  .container-about {
-    padding: 0px 307px 0 262px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .header-desktop {
     width: 100%;
@@ -746,6 +736,7 @@
     margin-bottom: 19px;
   }
   .recommend .recommend-list .recommend-item.rec-left {
+    display: block;
     position: relative;
     width: 43.2%;
     height: 745px;
@@ -764,7 +755,8 @@
     margin-top: 0;
     padding: 67px 25%;
   }
-  .recommend .recommend-list .rec-right {
+  .recommend .recommend-list .recommend-item.rec-right {
+    display: block;
     width: 56.8%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -774,69 +766,92 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .recommend .recommend-list .rec-right .recommend-item {
+  .recommend .recommend-list .recommend-item.rec-right .recommend-item {
     position: relative;
     height: 316px;
   }
-  .recommend .recommend-list .rec-right .recommend-item:first-child {
+  .recommend .recommend-list .recommend-item.rec-right .recommend-item:first-child {
     background-color: #282828;
     height: 419px;
     margin-bottom: 10px;
   }
-  .recommend .recommend-list .rec-right .recommend-item:first-child .recommend-item__img {
+  .recommend .recommend-list .recommend-item.rec-right .recommend-item:first-child .recommend-item__img {
     position: absolute;
     top: 17px;
     width: 190px;
     height: 389px;
   }
-  .recommend .recommend-list .rec-right .recommend-item:first-child a .recommend-item__text {
+  .recommend .recommend-list .recommend-item.rec-right .recommend-item:first-child a .recommend-item__text {
     margin: 0;
-    padding: 119px 18% 0 31.5%;
+    padding: 119px 18% 13% 31.5%;
   }
-  .recommend .recommend-list .rec-right .recommend-item:last-child .recommend-item__img {
+  .recommend .recommend-list .recommend-item.rec-right .recommend-item:last-child .recommend-item__img {
     width: 294px;
     height: 308px;
     position: absolute;
     right: 0;
     top: 8px;
   }
-  .recommend .recommend-list .rec-right .recommend-item:last-child .recommend-item__text {
+  .recommend .recommend-list .recommend-item.rec-right .recommend-item:last-child .recommend-item__text {
     margin: 0;
-    padding: 94px 40% 0 7.5%;
+    padding: 94px 40% 7% 7.5%;
   }
-  .about-us .company-info {
+  .about-us .container-about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 306px 0 262px;
+  }
+  .about-us .container-about .company-info {
     width: 19.5%;
     padding-top: 58px;
     margin-left: 0;
     margin-bottom: 0;
   }
-  .about-us .company-info .logo__img {
+  .about-us .container-about .company-info .logo__img {
     width: 151px;
     height: 151px;
     margin-bottom: 21px;
   }
-  .about-us .company-info .company {
+  .about-us .container-about .company-info .company {
     margin-top: 40px;
     margin-bottom: 20px;
   }
-  .about-us .about {
+  .about-us .container-about .about {
     width: 80.5%;
     padding-right: 225px;
     margin-bottom: 29px;
   }
-  .about-us .about div:first-child {
+  .about-us .container-about .about div:last-child {
+    display: block;
+  }
+  .about-us .container-about .about .container-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-us .container-about .about .container-about div:first-child {
     margin-bottom: 16px;
   }
-  .about-us .about div:nth-child(2) {
+  .about-us .container-about .about .container-about div:nth-child(2) {
     margin-bottom: 33px;
   }
-  .about-us .about div:last-child p {
+  .about-us .container-about .about .container-about div:last-child p {
     margin-bottom: 14px;
+  }
+  .container-about {
+    padding: 0px 307px 0 262px;
   }
   .plus {
     margin-bottom: 173px;
   }
   .plus img {
+    margin: 0;
     width: 49px;
     height: 49px;
   }
@@ -866,6 +881,9 @@
   .contacts .contacts-titles .contacts-title:last-child {
     display: none;
   }
+  .contacts .contacts-titles .contacts-list {
+    display: block;
+  }
   .footer {
     padding: 42px 264px 0 259px;
   }
@@ -889,6 +907,9 @@
 }
 
 @media (max-width: 1600px) {
+  .title.sale-title {
+    font-size: 30px;
+  }
   .slogan.categories-slogan {
     font-size: 10px;
   }
